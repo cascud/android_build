@@ -708,27 +708,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   system_progress = 0.75
 
   script.Print(" ")
-  script.Print(" ")
-  script.Print(" ")
-  script.Print(" RRRRRRRRRRRRRRRRR     RRRRRRRRRRRRRRRRR   ")
-  script.Print(" R::::::::::::::::R    R::::::::::::::::R  ")
-  script.Print(" R::::::RRRRRR:::::R   R::::::RRRRRR:::::R ")
-  script.Print(" RR:::::R     R:::::R  RR:::::R     R:::::R")
-  script.Print("   R::::R     R:::::R    R::::R     R:::::R")
-  script.Print("   R::::R     R:::::R    R::::R     R:::::R")
-  script.Print("   R::::RRRRRR:::::R     R::::RRRRRR:::::R ")
-  script.Print("   R:::::::::::::RR      R:::::::::::::RR  ")
-  script.Print("   R::::RRRRRR:::::R     R::::RRRRRR:::::R ")
-  script.Print("   R::::R     R:::::R    R::::R     R:::::R")
-  script.Print("   R::::R     R:::::R    R::::R     R:::::R")
-  script.Print("   R::::R     R:::::R    R::::R     R:::::R")
-  script.Print(" RR:::::R     R:::::R  RR:::::R     R:::::R")
-  script.Print(" R::::::R     R:::::R  R::::::R     R:::::R")
-  script.Print(" R::::::R     R:::::R  R::::::R     R:::::R")
-  script.Print(" RRRRRRRR     RRRRRRR  RRRRRRRR     RRRRRRR")
-  script.Print(" ")
-  script.Print(" ")
-  
+
   if GetBuildProp("ro.rr.version", OPTIONS.info_dict) is not None:
     buildid = GetBuildProp("ro.rr.version", OPTIONS.info_dict)
     buildtype = GetBuildProp("rr.build.type", OPTIONS.info_dict)
@@ -770,7 +750,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
     script.Print(" LCD density: %s"%(density));
     script.Print("");
     script.Print(" *******************************************");
-  
+
   if OPTIONS.wipe_user_data:
     system_progress -= 0.1
   if HasVendorPartition(input_zip):
